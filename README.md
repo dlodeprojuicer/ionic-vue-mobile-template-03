@@ -1,8 +1,8 @@
-## Ionic Vue Boilerplate
+## Ionic Vue Template 03 - [WORK IN PROGRESS]
 
 Hybrid app template built with vue, ionic and capacitor.
 
-[Demo](https://ionic-vue-template-01.netlify.app)
+[Demo](https://ionic-vue-template-03.netlify.app)
 
 ## Project setup
 ```
@@ -51,7 +51,7 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 Ionic Vue is still in beta; I am using this setup in production but please use with caution. Keep an eye on [Ionic Twitter account](https://twitter.com/Ionicframework), [forum](https://forum.ionicframework.com/) and [slack group](https://ionic-worldwide.slack.com) for updates, RCs and production release expected towards the end of the year.
 
 ## Credits
--  [manuelroviradesign](https://www.instagram.com/manuelroviradesign/) via [We Love Web Design](https://www.instagram.com/p/CC1GFMrBB6T/) - App design inspiration
+- [Valery Reck](https://dribbble.com/shots/11438470-Car-Leasing-App-Concept) - App design inspiration
 - [Tami Maiwashe](https://www.linkedin.com/in/tami-maiwashe-32824a19a/) - Documentation
 
 ## Contact

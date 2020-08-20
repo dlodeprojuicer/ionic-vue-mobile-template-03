@@ -1,8 +1,8 @@
 {
-  "name": "ionic-vue-boilerplate",
+  "name": "ionic-vue-template-03",
   "version": "1.0.0",
   "private": true,
-  "description": "Ionic Vue Boilerplate",
+  "description": "Hybrid app template built with vue, ionic and capacitor",
   "author": "Simo Mafuxwana",
   "scripts": {
     "build": "vue-cli-service build",

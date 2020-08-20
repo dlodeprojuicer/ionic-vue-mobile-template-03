@@ -1,29 +1,43 @@
 <template>
 	<fragment>
-		<ion-slides pager="true">
-			<ion-slide v-for="(item, index) in data" :key="index">
-				<ion-grid class="card">
-					<ion-row>
-						<ion-col class="expDate">
-							{{ item.expDate }}
-						</ion-col>
-						<ion-col class="card-icon">
-							<ion-icon name="card" />
-						</ion-col>
-					</ion-row>
-					<ion-row>
-						<ion-col class="card-number">
-							{{ item.cardNumber }}
-						</ion-col>
-					</ion-row>
-					<ion-row>
-						<ion-col class="balance">
-							R {{ item.balance }}
-						</ion-col>
-					</ion-row>
-				</ion-grid>
-			</ion-slide>
-		</ion-slides>
+		<ion-grid v-for="(item, index) in data" :key="index">
+			<ion-row class="first-row">
+				<div class="company">
+					{{ item.company }}
+					<br />
+					<span class="model">
+						{{ item.model }}
+					</span>
+				</div>
+				<img :src="item.image" />
+			</ion-row>
+			<ion-row class="second-row">
+				<ion-col>
+					<div class="label">Leasing Rate</div>
+					<div class="value">
+						{{ item.rate }}
+						<span class="unit">
+							/month
+						</span>
+					</div>
+				</ion-col>
+				<ion-col>
+					<div class="label">Leasing Term</div>
+					<div class="value">
+						{{ item.term }} 
+						<span class="unit">
+							months
+						</span>
+					</div>
+				</ion-col>
+				<ion-col>
+					<div class="label">New</div>
+					<div class="value">
+						{{ item.new }}
+					</div>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
 	</fragment>
 </template>
 
@@ -41,16 +55,56 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
-	background-color: #1fc8db;
-  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-	border-radius: 25px;
-  height: 170px;
-	margin: 0 3px;
+.company {
+	color: #ffffff;
+	font-weight: 500;
+	margin: 0 0 -64px 0;
+	padding: 15px;
+	z-index: 9999999999999;
+}
+
+.model {
+	font-size: 13px;
+	float: left;
 }
 
 ion-row {
-	margin: 10px;
+	img {
+		border-radius: 20px;
+		margin: 0;
+		padding: 0;
+	}
+
+	&.first-row {
+		border-radius: 20px 20px 0 0;
+		background: #ffffff;
+		margin: 0;
+		padding: 0;
+	}
+
+	&.second-row {
+		padding: 10px;
+		background: #ffffff;
+		border-radius: 0 0 20px 20px;
+	}
+
+	ion-col {
+		.label {
+			margin-bottom: 10px;
+			font-weight: 500;
+			font-size: 13px;
+		}
+
+		.value {
+			font-weight: 500;
+			font-size: 15px;
+			color: #96a6d2;
+		}
+
+		.unit {
+			font-size: 11px;
+		}
+	}
 }
 
 .balance, .expDate, .card-number {

@@ -22,24 +22,19 @@ export default {
       loggedIn: true,
       footer: [
         {
-          label: "Home",
-          route: "home",
-          icon: "home"
+          label: "Profile",
+          route: "profile",
+          icon: "person"
         },
         {
-          label: "About",
-          route: "about",
-          icon: "pie"
+          label: "Home",
+          route: "home",
+          icon: "add"
         },
         {
           label: "Notifications",
           route: "notifications",
           icon: "notifications"
-        },
-        {
-          label: "Profile",
-          route: "profile",
-          icon: "person"
         }
       ]
     }
@@ -70,12 +65,13 @@ h1 , h2 , h3 , h4 , p , a , ul li , strong , label {
   --ion-color-medium-tint: #777777;
   --ion-color-medium-shade: #777777;
   --ion-color-medium-contrast:#777777;
-  --ion-background-color: #c1d5d8;
+  --ion-background-color: #BDC3CE;
 
-  // ion-content{
+  ion-content{
+    --padding-bottom: 80px !important;
   // --ion-background: #e1e9ea !important;
   // --background: #e1e9ea !important;
-  // }
+  }
 
 }
 </style>

@@ -1,60 +1,55 @@
 <template>
   <ion-content class="ion-padding">
-    <ion-grid class="overview-wrapper">
+    <ion-grid class="header-wrapper">
       <ion-row>
-        <ion-col class="overview">Overview</ion-col>
+        <ion-col class="header">Leasing Match</ion-col>
         <ion-col>
-          <ion-icon name="add" class="overview-add"></ion-icon>
+          <ion-icon name="grid" class="header-icons"></ion-icon>
+          <ion-icon name="menu" class="header-icons"></ion-icon>
         </ion-col>
       </ion-row>
     </ion-grid>
 
     <CardWallet :data="cards" />
-
-    <SectionDivider data="Expenses" />
-
-    <RecentList :data="subscriptions" />
-
-    <QuickActions />
   </ion-content>
 </template>
 
 <script>
-import SectionDivider from "../components/SectionDivider";
 import CardWallet from "../components/CardWallet";
-import RecentList from "../components/RecentList";
-import QuickActions from "../components/QuickActions";
 
 export default {
   name: "home",
   title: "Home",
   requiresAuth: false,
   components: {
-    SectionDivider,
-    CardWallet,
-    RecentList,
-    QuickActions,
+    CardWallet
   },
   data() {
     return {
       cards: [
         {
-          cardNumber: "4524 3428 898 239",
-          balance: "12 354.05",
-          accountName: "Savings",
-          expDate: "02/2020",
+          new: "59.990",
+          rate: "481",
+          term: "36",
+          company: "Volvo",
+          model: "XC 40",
+          image: "https://www.dailymaverick.co.za/wp-content/uploads/19-213087_new_volvo_xc40_exterior-498114-e1527721345669-1600x841.jpg"
         },
         {
-          cardNumber: "9483 2394 8987 8391",
-          balance: "1435.20",
-          accountName: "Savings",
-          expDate: "06/2024",
+          new: "54.980",
+          rate: "342",
+          term: "36",
+          company: "Mercedes",
+          model: "C-Class",
+          image: "https://cdn.motor1.com/images/mgl/3xR11/s3/2019-mercedes-benz-c-class-sedan.jpg"
         },
         {
-          cardNumber: "3079 485 2395 3944",
-          balance: "8 200",
-          accountName: "Savings",
-          expDate: "08/2022",
+          new: "43.986",
+          rate: "366",
+          term: "36",
+          company: "Lexus",
+          model: "LS",
+          image: "https://images.hgmsites.net/hug/lexus-ls_100751064_h.jpg"
         },
       ],
       subscriptions: [
@@ -91,21 +86,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.overview-wrapper {
+.header-wrapper {
   margin-bottom: 10px;
 }
 
-.overview {
-  font-size: 20px;
-  font-weight: 600;
+.header {
+  font-size: 17px;
+  font-weight: 500;
 }
 
-.overview-add {
-  background: #ffffff;
+.header-icons {
   padding: 0px;
-  border-radius: 10px;
-  color: #000;
   float: right;
   font-size: 28px;
+
+  &:last-child {
+    margin-right: 10px;
+  }
 }
 </style>
