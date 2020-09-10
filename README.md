@@ -1,8 +1,6 @@
-## Ionic Vue Template 03 - [WORK IN PROGRESS]
+## Ionic Vue Template 03
 
-Hybrid app template built with vue, ionic and capacitor.
-
-Each weekend I spend sometime creating Ionic-Vue templates from app design inspiration pages on Instagram or Dribble.
+Hybrid app template built with vue, ionic and capacitor - Each weekend I spend sometime creating Ionic-Vue templates from app design inspiration pages on Instagram or Dribble.
 
 [Demo](https://ionic-vue-template-03.netlify.app)
 
