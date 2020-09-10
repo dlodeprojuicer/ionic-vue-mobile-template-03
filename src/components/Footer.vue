@@ -28,8 +28,9 @@ export default {
 		}
 	},
 	methods: {
-		goto(route) {
-			this.$emit("goto", route);
+		goto() {
+			// routing
+			// this.$emit("goto", route);
 		}
 	}
 }
