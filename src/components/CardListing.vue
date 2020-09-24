@@ -1,5 +1,5 @@
 <template>
-	<fragment>
+	<div>
 		<ion-grid v-for="(item, index) in data" :key="index">
 			<ion-row class="first-row">
 				<div class="company">
@@ -38,12 +38,15 @@
 				</ion-col>
 			</ion-row>
 		</ion-grid>
-	</fragment>
+	</div>
 </template>
 
 <script>
+import { IonGrid, IonRow, IonCol } from "@ionic/vue";
+
 export default {
-  name: "card-wallet",
+	name: "card-wallet",
+	components: { IonGrid, IonRow, IonCol },
   props: {
 		data: {
 			type: Array,

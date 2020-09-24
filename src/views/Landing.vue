@@ -1,28 +1,44 @@
 <template>
-  <ion-content class="ion-padding">
-    <ion-grid class="header-wrapper">
-      <ion-row>
-        <ion-col class="header">Leasing Match</ion-col>
-        <ion-col>
-          <ion-icon name="grid" class="header-icons"></ion-icon>
-          <ion-icon name="menu" class="header-icons"></ion-icon>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+  <ion-page>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Leasing Match</ion-title>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon :icon="menu"></ion-icon>
+          </ion-button>
+          <ion-button>
+            <ion-icon :icon="grid"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content :fullscreen="true">
+      <ion-header collapse="condense">
+        <ion-toolbar>
+          <ion-title size="large">Tab 1</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    
+      <CardListing :data="cards" />
 
-    <CardWallet :data="cards" />
-  </ion-content>
+    </ion-content>
+  </ion-page>
 </template>
 
 <script>
-import CardWallet from "../components/CardWallet";
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon, IonButtons, IonButton } from '@ionic/vue';
+import CardListing from "../components/CardListing";
+import { grid, menu } from 'ionicons/icons';
 
-export default {
-  name: "home",
-  title: "Home",
-  requiresAuth: false,
-  components: {
-    CardWallet
+export default  {
+  name: 'Tab1',
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonIcon, IonButtons, IonButton, CardListing },
+  setup() {
+    return {
+      grid,
+      menu
+    }
   },
   data() {
     return {
@@ -79,29 +95,14 @@ export default {
         },
       ],
     };
-  },
-  mounted() {},
-  methods: {},
-};
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-.header-wrapper {
+ion-header {
+  padding: 7px 0;
   margin-bottom: 10px;
-}
-
-.header {
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.header-icons {
-  padding: 0px;
-  float: right;
-  font-size: 28px;
-
-  &:last-child {
-    margin-right: 10px;
-  }
+  border-bottom: none;
 }
 </style>

@@ -1,8 +1,8 @@
-## Ionic Vue Template 03
+## Ionic Vue Mobile Template 03
 
-Hybrid app template built with vue, ionic and capacitor - Each weekend I spend sometime creating Ionic-Vue templates from app design inspiration pages on Instagram or Dribble.
+Hybrid mobile template built with ([latest](https://ionicframework.com/blog/announcing-the-new-ionic-vue-beta/)) vue-ionic and using capacitor for native builds - These templates are from app design inspiration pages on Instagram or Dribble.
 
-[Demo](https://ionic-vue-template-03.netlify.app)
+[Demo](https://ionic-vue-mobile-template-03.netlify.app)
 
 ## Project setup
 ```
@@ -11,7 +11,7 @@ npm install
 
 ### Run on the browser - development
 ```
-npm run dev
+npm run serve
 ```
 
 ### Linter

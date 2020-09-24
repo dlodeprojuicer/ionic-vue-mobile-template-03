@@ -1,7 +1,5 @@
 {
-  "name": "test",
-  "integrations": {
-    "capacitor": {}
-  },
+  "name": "my-app",
+  "integrations": {},
   "type": "vue"
 }

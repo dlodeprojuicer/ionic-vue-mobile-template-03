@@ -1,76 +1,41 @@
 {
-  "name": "ionic-vue-template-03",
-  "version": "1.0.0",
+  "name": "my-app",
+  "version": "0.0.1",
   "private": true,
-  "description": "Hybrid app template built with vue, ionic and capacitor",
-  "author": "Simo Mafuxwana",
   "scripts": {
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service serve"
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@capacitor/android": "^1.1.1",
-    "@capacitor/core": "1.1.1",
-    "@capacitor/ios": "^2.0.0-beta.1",
-    "@ionic/core": "^4.6.2",
-    "@ionic/vue": "0.0.4",
-    "axios": "^0.19.2",
-    "core-js": "^2.6.11",
-    "ionic-vue-form": "^1.2.2",
-    "ionicons": "4.5.9-1",
+    "@ionic/vue": "^0.4.0",
+    "@ionic/vue-router": "^0.4.0",
+    "core-js": "^3.6.5",
     "node-sass": "^4.14.1",
-    "register-service-worker": "^1.7.1",
-    "sass-loader": "^7.3.1",
-    "vee-validate": "^2.2.15",
-    "vue": "^2.6.11",
-    "vue-fragment": "^1.5.1",
-    "vue-router": "^3.1.6",
-    "vuex": "^3.4.0"
+    "sass-loader": "^10.0.2",
+    "vue": "^3.0.0-0",
+    "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
-    "@capacitor/cli": "1.1.1",
-    "@vue/cli-plugin-babel": "^3.12.1",
-    "@vue/cli-plugin-eslint": "^3.12.1",
-    "@vue/cli-plugin-pwa": "^3.12.1",
-    "@vue/cli-service": "^4.3.1",
-    "babel-eslint": "^10.1.0",
-    "cross-env": "^5.2.1",
-    "eslint": "4.18.2",
-    "eslint-plugin-vue": "^5.0.0",
-    "husky": "^3.1.0",
-    "inquirer": "^6.5.2",
-    "nodemon": "^1.19.4",
-    "replace": "^1.2.0",
-    "vue-cli-plugin-cordova": "^2.4.1",
-    "vue-template-compiler": "^2.6.11"
+    "@types/jest": "^24.0.19",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0-0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^2.0.0-0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "typescript": "~3.9.3",
+    "vue-jest": "^5.0.0-0",
+    "@typescript-eslint/eslint-plugin": "^2.33.0"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  }
+  "description": "An Ionic project"
 }
