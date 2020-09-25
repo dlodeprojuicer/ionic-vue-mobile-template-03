@@ -1,5 +1,7 @@
 ## Ionic Vue Mobile Template 03
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2a4bd023-1a21-4dd0-89dd-9a2854b3d056/deploy-status)](https://app.netlify.com/sites/ionic-vue-mobile-template-03/deploys)
+
 Hybrid mobile template built with ([latest](https://ionicframework.com/blog/announcing-the-new-ionic-vue-beta/)) vue-ionic and using capacitor for native builds - These templates are from app design inspiration pages on Instagram or Dribble.
 
 [Demo](https://ionic-vue-mobile-template-03.netlify.app)
