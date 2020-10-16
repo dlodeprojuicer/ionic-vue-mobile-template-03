@@ -22,7 +22,7 @@
 
 <script lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonContent, IonIcon, IonPage } from '@ionic/vue';
-import { person, square, add, notifications } from 'ionicons/icons';
+import { person, add, notifications } from 'ionicons/icons';
 
 export default {
   name: 'Tabs',
