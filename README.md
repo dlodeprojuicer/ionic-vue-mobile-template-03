@@ -1,10 +1,12 @@
 ## Ionic Vue Mobile Template 03
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2a4bd023-1a21-4dd0-89dd-9a2854b3d056/deploy-status)](https://app.netlify.com/sites/ionic-vue-mobile-template-03/deploys)
+![Netlify Status](https://api.netlify.com/api/v1/badges/2a4bd023-1a21-4dd0-89dd-9a2854b3d056/deploy-status)
 
 Hybrid mobile template built with ([latest](https://ionicframework.com/blog/announcing-the-new-ionic-vue-beta/)) vue-ionic and using capacitor for native builds - These templates are from app design inspiration pages on Instagram or Dribble.
 
 [Demo](https://ionic-vue-mobile-template-03.netlify.app)
+
+<a href="https://www.buymeacoffee.com/simomafuxwana" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="120px" height="30px" style="height: 30px !important;width: 120px !important;" ></a>
 
 ## Project setup
 ```
@@ -49,8 +51,10 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 4. `npx cap open android` Android Studio takes a few minutes to index the files, keep an eye at the bottom of Android Studio for progress.
 5. Testing - When indexing is complete, look for a green play button. Click the play button and it will launch the app in an emulator ([See here to setup Emulator](https://developer.android.com/studio/run/managing-avds)) or on the phone if a phone is connected via USB.
 
-## Disclaimer
-Ionic Vue is still in beta; I am using this setup in production but please use with caution. Keep an eye on [Ionic Twitter account](https://twitter.com/Ionicframework), [forum](https://forum.ionicframework.com/) and [slack group](https://ionic-worldwide.slack.com) for updates, RCs and production release expected towards the end of the year.
+## Official docs
+- [Blog](https://ionicframework.com/blog/announcing-ionic-vue/)
+- [Getting started](https://ionicframework.com/docs/vue/quickstart)
+- [Changelog](https://github.com/ionic-team/ionic-framework/blob/master/CHANGELOG.md)
 
 ## Credits
 - [Valery Reck](https://dribbble.com/shots/11438470-Car-Leasing-App-Concept) - App design inspiration
