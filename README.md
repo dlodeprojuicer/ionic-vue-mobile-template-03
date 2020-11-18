@@ -55,6 +55,9 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 - [Getting started](https://ionicframework.com/docs/vue/quickstart)
 - [Changelog](https://github.com/ionic-team/ionic-framework/blob/master/CHANGELOG.md)
 
+## Newsletter
+[Subscribe](https://mailchi.mp/1d7bf1ee6d78/ionic-vue-templates) to get templete and other ionic-vue updates in your inbox!
+
 ## Template affiliates
 I want to keep doing these templates for free for as long as possible. I have joined a few affialate programs to help take care of the costs. 
 - [Pixeltrue](https://www.pixeltrue.com/?via=simo) - High quality illustrations that will help you build breath-taking websites.
