@@ -10,6 +10,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@capacitor/ios": "^2.4.6",
     "@ionic/vue": "^5.4.0",
     "@ionic/vue-router": "^5.4.0",
     "core-js": "^3.6.5",
@@ -19,7 +20,10 @@
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
+    "@capacitor/cli": "^2.4.6",
+    "@capacitor/core": "^2.4.6",
     "@types/jest": "^24.0.19",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-e2e-cypress": "~4.5.0",
@@ -34,8 +38,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
     "typescript": "~3.9.3",
-    "vue-jest": "^5.0.0-0",
-    "@typescript-eslint/eslint-plugin": "^2.33.0"
+    "vue-jest": "^5.0.0-0"
   },
   "description": "An Ionic project"
 }
