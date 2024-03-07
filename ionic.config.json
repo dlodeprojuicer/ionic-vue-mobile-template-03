@@ -1,5 +1,7 @@
 {
-  "name": "my-app",
-  "integrations": {},
-  "type": "vue"
+  "name": "template-01",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
 }

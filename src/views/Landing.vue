@@ -28,7 +28,7 @@
 
 <script>
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon, IonButtons, IonButton } from '@ionic/vue';
-import CardListing from "../components/CardListing";
+import CardListing from "../components/CardListing.vue";
 import { grid, menu } from 'ionicons/icons';
 
 export default  {

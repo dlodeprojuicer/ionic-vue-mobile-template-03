@@ -2,6 +2,7 @@
   <ion-page>
     <ion-content>
       <ion-tabs>
+        <ion-router-outlet></ion-router-outlet>
         <ion-tab-bar slot="bottom">
           <ion-tab-button>
             <ion-icon :icon="person" />
@@ -21,12 +22,12 @@
 </template>
 
 <script lang="ts">
-import { IonTabBar, IonTabButton, IonTabs, IonContent, IonIcon, IonPage } from '@ionic/vue';
+import {IonTabBar, IonTabButton, IonTabs, IonContent, IonIcon, IonPage, IonRouterOutlet} from '@ionic/vue';
 import { person, add, notifications } from 'ionicons/icons';
 
 export default {
   name: 'Tabs',
-  components: { IonContent, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage },
+  components: {IonRouterOutlet, IonContent, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage },
   setup() {
     return {
       person, 

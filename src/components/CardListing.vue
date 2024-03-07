@@ -45,7 +45,7 @@
 import { IonGrid, IonRow, IonCol } from "@ionic/vue";
 
 export default {
-	name: "card-wallet",
+	name: "card-listing",
 	components: { IonGrid, IonRow, IonCol },
   props: {
 		data: {
