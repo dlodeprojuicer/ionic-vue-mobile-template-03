@@ -27,9 +27,45 @@
 </template>
 
 <script setup lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon } from '@ionic/vue';
+import { IonButton, IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon } from '@ionic/vue';
 import {grid, menu} from "ionicons/icons";
 import CardListing from "@/components/CardListing.vue"
+
+interface LeasingCard {
+  new: string
+  rate: string
+  term: string
+  company: string
+  model: string
+  image: string
+}
+
+const cards: LeasingCard[] = [
+  {
+    new: "59.990",
+    rate: "481",
+    term: "36",
+    company: "Volvo",
+    model: "XC 40",
+    image: "https://www.dailymaverick.co.za/wp-content/uploads/19-213087_new_volvo_xc40_exterior-498114-e1527721345669-1600x841.jpg"
+  },
+  {
+    new: "54.980",
+    rate: "342",
+    term: "36",
+    company: "Mercedes",
+    model: "C-Class",
+    image: "https://cdn.motor1.com/images/mgl/3xR11/s3/2019-mercedes-benz-c-class-sedan.jpg"
+  },
+  {
+    new: "43.986",
+    rate: "366",
+    term: "36",
+    company: "Lexus",
+    model: "LS",
+    image: "https://images.hgmsites.net/hug/lexus-ls_100751064_h.jpg"
+  },
+]
 </script>
 
 <style scoped>

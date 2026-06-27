@@ -26,13 +26,13 @@
   </ion-page>
 </template>
 
-<script>
+<script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon, IonButtons, IonButton } from '@ionic/vue';
 import CardListing from "../components/CardListing.vue";
 import { grid, menu } from 'ionicons/icons';
 
 export default  {
-  name: 'Tab1',
+  name: 'LandingPage',
   components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonIcon, IonButtons, IonButton, CardListing },
   setup() {
     return {

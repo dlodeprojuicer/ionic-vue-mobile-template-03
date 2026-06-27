@@ -26,7 +26,7 @@ import {IonTabBar, IonTabButton, IonTabs, IonContent, IonIcon, IonPage, IonRoute
 import { person, add, notifications } from 'ionicons/icons';
 
 export default {
-  name: 'Tabs',
+  name: 'TabsPage',
   components: {IonRouterOutlet, IonContent, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage },
   setup() {
     return {

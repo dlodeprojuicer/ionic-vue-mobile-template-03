@@ -41,20 +41,21 @@
 	</div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { IonGrid, IonRow, IonCol } from "@ionic/vue";
 
-export default {
-	name: "card-listing",
-	components: { IonGrid, IonRow, IonCol },
-  props: {
-		data: {
-			type: Array,
-			required: true,
-			default: () => []
-		}
-	}
+interface CardListingItem {
+	new: string
+	rate: string
+	term: string
+	company: string
+	model: string
+	image: string
 }
+
+defineProps<{
+	data: CardListingItem[]
+}>()
 </script>
 
 <style lang="scss" scoped>
